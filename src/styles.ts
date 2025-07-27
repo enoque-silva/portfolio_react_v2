@@ -4,6 +4,7 @@ const EstiloGlobal = createGlobalStyle`
   * {
     margin: 0;
     adding: 0;
+    font-family: "Inter", sans-serif;
   }
 
   body {
