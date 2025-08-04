@@ -14,8 +14,13 @@ const Sidebar = (props: Props) => (
       <Avatar />
       <Titulo fontSize={24}>Enoque Ribeiro</Titulo>
       <Paragrafo tipo="secundario" fontSize={16}>
-        <a href="#" style={{ textDecoration: 'none', color: 'inherit' }}>
-          enoque-silva
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/enoque-ribeiro/"
+          style={{ textDecoration: 'none', color: 'inherit' }}
+          rel="noreferrer"
+        >
+          enoque-ribeiro
         </a>
       </Paragrafo>
       <Descricao fontSize={12} tipo="principal">
