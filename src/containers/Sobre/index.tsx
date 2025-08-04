@@ -1,12 +1,11 @@
-import Paragrafo from '../../components/Paragrafo'
 import Titulo from '../../components/Titulo'
-import { Descricao } from '../Sidebar/styles'
+import Descricao from '../../components/Descricao'
 import { GithubSecao } from './styles'
 
 const Sobre = () => (
   <section>
     <Titulo fontSize={20}>Sobre mim</Titulo>
-    <Descricao tipo="principal">
+    <Descricao>
       Sou graduando em Engenharia da Computação e entusiasta em criar
       experiências digitais que unem design, funcionalidade e performance. Em
       formação em Desenvolvimento Fullstack pela EBAC, atuo na construção de
@@ -14,7 +13,7 @@ const Sobre = () => (
       experiência do usuário.
     </Descricao>
     <br />
-    <Descricao tipo="principal">
+    <Descricao>
       Tenho facilidade em aprender novas tecnologias, trabalhar em equipe e
       transformar desafios em soluções criativas. Meu objetivo é contribuir para
       projetos inovadores, entregando resultados que gerem impacto real para
