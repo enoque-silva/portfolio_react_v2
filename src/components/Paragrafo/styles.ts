@@ -10,4 +10,9 @@ export const Paragrafo = styled.p<Props>`
     props.tipo === 'principal'
       ? (props.theme as Theme).corPrincipal
       : (props.theme as Theme).corSecundaria};
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `

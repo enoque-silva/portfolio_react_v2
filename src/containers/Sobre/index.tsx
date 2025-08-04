@@ -6,10 +6,18 @@ const Sobre = () => (
   <section>
     <Titulo fontSize={20}>Sobre mim</Titulo>
     <Paragrafo tipo="principal">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nesciunt
-      aliquid hic corrupti nisi ipsam veritatis perspiciatis harum facere!
-      Maiores veniam itaque ex nisi! Delectus placeat excepturi dicta quod
-      accusantium.
+      Sou graduando em Engenharia da Computação e apaixonado por criar
+      experiências digitais que unem design, funcionalidade e performance. Em
+      formação em Desenvolvimento Fullstack pela EBAC, atuo na construção de
+      interfaces modernas e responsivas, sempre com foco na usabilidade e na
+      experiência do usuário.
+    </Paragrafo>
+    <br />
+    <Paragrafo tipo="principal">
+      Tenho facilidade em aprender novas tecnologias, trabalhar em equipe e
+      transformar desafios em soluções criativas. Meu objetivo é contribuir para
+      projetos inovadores, entregando resultados que gerem impacto real para
+      empresas e usuários.
     </Paragrafo>
 
     <GithubSecao>

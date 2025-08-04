@@ -1,14 +1,26 @@
 import Paragrafo from '../Paragrafo'
 import { Titulo } from '../Titulo/styles'
-import { Card, LinkBotao } from './styles'
+import { Card, LinkBotao, ImagemPost, LinkBotaoSecundario } from './styles'
 
-const Projeto = () => (
+interface ProjetoProps {
+  imagem?: string
+  titulo?: string
+  descricao?: string
+  urlBotao?: string
+}
+
+const Projeto = ({
+  imagem = 'https://placehold.jp/300x150.png',
+  titulo = 'Título padrão',
+  descricao = 'Descrição padrão do projeto.',
+  urlBotao = '#'
+}: ProjetoProps) => (
   <Card>
-    <Titulo>Calculadora IMC</Titulo>
-    <Paragrafo tipo="secundario">
-      Calculadora IMC desenvolvida com React.
-    </Paragrafo>
-    <LinkBotao>Visualizar</LinkBotao>
+    <ImagemPost src={imagem} alt={titulo} />
+    <Titulo>{titulo}</Titulo>
+    <Paragrafo tipo="secundario">{descricao}</Paragrafo>
+    <LinkBotao href={urlBotao}>Visualizar</LinkBotao>
+    <LinkBotaoSecundario href={urlBotao}>GitHub</LinkBotaoSecundario>
   </Card>
 )
 
