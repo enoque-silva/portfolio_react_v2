@@ -7,20 +7,26 @@ interface ProjetoProps {
   titulo?: string
   descricao?: string
   urlBotao?: string
+  urlBotaoSecundario?: string
 }
 
 const Projeto = ({
   imagem = 'https://placehold.jp/300x150.png',
   titulo = 'Título padrão',
   descricao = 'Descrição padrão do projeto.',
-  urlBotao = '#'
+  urlBotao = '#',
+  urlBotaoSecundario = '#'
 }: ProjetoProps) => (
   <Card>
     <ImagemPost src={imagem} alt={titulo} />
     <Titulo>{titulo}</Titulo>
     <Paragrafo tipo="secundario">{descricao}</Paragrafo>
-    <LinkBotao href={urlBotao}>Visualizar</LinkBotao>
-    <LinkBotaoSecundario href={urlBotao}>GitHub</LinkBotaoSecundario>
+    <LinkBotao href={urlBotao} target="_blank">
+      Visualizar
+    </LinkBotao>
+    <LinkBotaoSecundario href={urlBotaoSecundario} target="_blank">
+      GitHub
+    </LinkBotaoSecundario>
   </Card>
 )
 
