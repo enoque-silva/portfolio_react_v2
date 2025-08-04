@@ -1,7 +1,8 @@
 import { Paragrafo as ParagrafoEstilo } from './styles'
+import { ReactNode } from 'react'
 
 export type Props = {
-  children: string
+  children: ReactNode
   tipo?: 'principal' | 'secundario'
   fontSize?: number
 }

@@ -6,7 +6,7 @@ const Sobre = () => (
   <section>
     <Titulo fontSize={20}>Sobre mim</Titulo>
     <Paragrafo tipo="principal">
-      Sou graduando em Engenharia da Computação e apaixonado por criar
+      Sou graduando em Engenharia da Computação e entusiasta em criar
       experiências digitais que unem design, funcionalidade e performance. Em
       formação em Desenvolvimento Fullstack pela EBAC, atuo na construção de
       interfaces modernas e responsivas, sempre com foco na usabilidade e na
